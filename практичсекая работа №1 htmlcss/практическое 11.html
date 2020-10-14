@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>example</title>
+</head>
+
+<body style="background: linear-gradient(#FF7F50, #FA8072, #FFB6C1);">
+
+    <div class="form-wrap">
+        <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+            <h1>Регистрация</h1>
+        </div>
+        <form method="post" action="form.php">
+            <div>
+                <label for="name">Имя</label>
+                <input type="text" name="name" required placeholder="Ivan"> <br>
+                <label for="surname">Фамилия</label><input type="text" name="surname" required
+                    placeholder="Ivanov"><label class="required"></label> <br>
+                <label for="name">Отчество</label><input type="text" name="name" required placeholder="Ivanovich"><label
+                    class="required"></label>
+            </div>
+            <div class="radio">
+                <span>Пол</span>
+                <label>
+                    <input type="radio" name="sex" value="мужской">мужской
+                    <div class="radio-control male"></div>
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="женский">женский
+                    <div class="radio-control female"></div>
+                </label>
+            </div>
+            <div>
+                <form>
+                    <p>Телефон в формате 8-xxx-xxx-xx-xx: <input type="tel" name="tel"
+                            pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (9xx)-xxx-xx-xx"></p>
+
+                </form>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required placeholder="Ivanov@mail.ru">
+                <label for="name">Пароль</label>
+                <input type="password" name="password" required placeholder="***********">
+                <label class="required"></label>
+            </div>
+            <div>
+                <label for="country">Страна</label>
+                <select name="country">
+                    <option>Выберите страну проживания</option>
+                    <option value="Россия">Россия</option>
+                    <option value="Украина">Украина</option>
+                    <option value="Беларусь">Беларусь</option>
+                </select>
+                <div class="select-arrow"></div>
+            </div>
+            <div class="data3">
+                <label for="name">Введите число с картинки</label>
+                <div class="data3_2">
+                    <span>
+                        <img src="https://blog.malwarebytes.com/wp-content/uploads/2015/01/captcha2.png" alt="">
+                    </span>
+                    <input type="number" name="captcha" required>
+                    <span class="wrong-captcha">Неправильное число</span>
+                    <label class="required"></label>
+                </div>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+
+</html>

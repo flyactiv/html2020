@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    Статус
+    <progress value="34" max="100">
+        <div id="container" class="graph">
+            <div id="bar" style="width:34%">
+                <progress value="10" max="100"></progress>
+                <p>34% complete</p>
+            </div>
+        </div>
+    </progress> <br><br><br>
+    <meter value="30" max="100" low="10" high="60">Нормальная</meter>
+    <style>
+        .progress {
+            width: 500px;
+            /* width and height are arbitrary, just make sure the #bar styles are changed accordingly */
+            height: 40px;
+            border: 3px solid gray;
+            background: rgb(168, 168, 168);
+            background: -moz-linear-gradient(top, rgba(168, 168, 168, 1) 0%, rgba(204, 204, 204, 1) 23%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(168, 168, 168, 1)), color-stop(23%, rgba(204, 204, 204, 1)));
+            background: -webkit-linear-gradient(top, rgba(168, 168, 168, 1) 0%, rgba(204, 204, 204, 1) 23%);
+            background: -o-linear-gradient(top, rgba(168, 168, 168, 1) 0%, rgba(204, 204, 204, 1) 23%);
+            background: -ms-linear-gradient(top, rgba(168, 168, 168, 1) 0%, rgba(204, 204, 204, 1) 23%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8a8a8', endColorstr='#cccccc', GradientType=0);
+            background: linear-gradient(top, rgba(168, 168, 168, 1) 0%, rgba(204, 204, 204, 1) 23%);
+            position: relative;
+        }
+    </style>
+</body>
+
+</html>

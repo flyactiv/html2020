@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--<style>
+        .body {
+            background-color: azure;
+        }
+
+        #raz {
+            position: relative;
+            display: inline-block;
+        }
+
+        #raz a {
+            position: absolute;
+            border: 1px solid rgba(255, 255, 255, .5);
+        }
+
+        #raz a:nth-of-type(1) {
+            left: 10%;
+            top: 17%;
+            width: 22%;
+            height: 20%;
+        }
+
+        #raz a:nth-of-type(2) {
+            left: 37%;
+            top: 26%;
+            width: 22%;
+            height: 20%;
+            border-radius: 100px / 20px 20px 60px 60px;
+            transform: rotate(-12deg);
+        }
+
+        #raz a:nth-of-type(3) {
+            left: 58%;
+            top: 18%;
+            width: 25%;
+            height: 18%;
+            border-radius: 100%;
+        }
+
+        #raz a:hover {
+            background: rgba(255, 255, 255, .3);
+        }
+    </style>
+    <span id="raz">
+        <img src="picture.jpg" alt="девочка в платье">
+        <a href="#raz1" title="цветы"></a>
+        <a href="#raz2" title="платье"></a>
+        <a href="#raz3" title="краска для стены"></a>
+    </span>  -->
+
+    <img src="picture.jpg" alt="девочка в платье" usemap="#pictures" width="1000" height="1300">
+
+    <map name="pictures">
+        <area shape="rect" coords="700,100,960,360" title="colors"
+            href="https://www.sniezka.ua/ru/produkty/steny-i-potolki">
+        <area shape="circle" coords="300,800, 250" title="dress" href="https://dressa.com.ua/c/platia">
+        <area shape="poly"
+            coords="251,33, 273,101, 344,101, 286,143, 309,210, 251,170, 192,213, 215,143, 158,101, 229,101"
+            href="https://donpion.ua" alt="dress">
+    </map>
+
+</body>
+
+</html>

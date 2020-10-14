@@ -1,0 +1,34 @@
+.content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .btn {
+    padding: 15px;
+    color: #FFF;
+    display: inline-block;
+    background: #000;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .popup {
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+    display: none;
+    width: 280px;
+    padding: 20px;
+    background: blue;
+    color: #FFF;
+    text-align: center;
+  }
+  .tilte {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 0 20px
+    font-weight: bold;
+  }
+  input {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+  }

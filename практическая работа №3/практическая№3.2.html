@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cat {
+            box-shadow: 5px 5px;
+        }
+
+        .three {
+
+            box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+            /* Тень */
+            padding: 10px;
+            /* Поля вокруг текста */
+            border-radius: 10px;
+            /* Радиус скругления */
+            background: aquamarine;
+            /* Цвет фона */
+        }
+
+        .kitten {
+            transition: box-shadow 2s;
+            box-shadow: -18px 0 50px -20px rgb(11, 231, 231),
+                18px 0 50px -20px rgb(241, 9, 9), 0px 18px 50px -20px rgb(3, 252, 3), 0px -18px 50px -20px rgb(214, 10, 214);
+        }
+
+        .kitten:hover {
+            box-shadow: -18px 0 50px -20px rgb(183, 231, 11),
+                18px 0 50px -20px rgb(241, 9, 241), 0px 18px 50px -20px rgb(252, 103, 3), 0px -18px 50px -20px rgb(4, 62, 253);
+        }
+
+        .kard::after {
+            content: '\2660';
+            /*карточные масти*/
+        }
+
+        .kard1::after {
+            content: '\2661';
+        }
+
+        .kard2::after {
+            content: '\2663';
+        }
+
+        .kard3::after {
+            content: '\2665';
+        }
+
+        .kard4::after {
+            content: '\2662';
+        }
+
+        .kard5::after {
+            content: '\2664';
+        }
+
+        .grek::after {
+            content: '\391, \392,\393,\394,\395';
+            /* греческие буквы*/
+
+        }
+
+        .money::after {
+            content: '\20AC,\A3';
+            /*  знаки денег*/
+
+        }
+
+        .mark::after {
+            content: '\A9,\AE,\2122';
+            /*     торговая марка копиррайт */
+
+        }
+
+        .math::after {
+            content: '\BC,\BD,\BE';
+            /* дроби*/
+
+        }
+
+        .tire::after {
+            content: '\B6,\A7,\2013,\2014';
+            /*    тире */
+
+        }
+
+        .drugoe::after {
+            content: '\2190,\2191,\2192,\2193,\2194';
+            /*стрелки */
+        }
+
+        .chess-board {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        .chess-board th {
+            padding: .5em;
+        }
+
+        .chess-board td {
+            border: 1px solid;
+            width: 2em;
+            height: 2em;
+        }
+
+        .chess-board .light {
+            background: #eee;
+        }
+
+        .chess-board .dark {
+            background: rgb(87, 17, 87);
+        }
+
+        .diogram {
+            background: #ECF5E4;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font: 40px/100px Times, serif;
+            border: 24px solid #95CD8B;
+            border-right: 24px solid #D0E6BB;
+            border-radius: 100px;
+        }
+
+        span {
+            font-size: 0.6em;
+        }
+
+        input:valid+span::after {
+            content: url(galka.PNG);
+            padding-left: 5px;
+        }
+
+        input:invalid+span::after {
+            content: url(zvezda..PNG);
+            padding-left: 5px;
+        }
+
+        input[type="number"] {
+            margin-right: -3px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>.</p><br><br><br><br>2
+    <img class="kitten" src="figure.jpg" alt="" width="250" height="250">
+    <br><br><br><br><br><br>
+    1
+    <img class="cat" src="https://klike.net/uploads/posts/2019-07/1564314090_3.jpg" alt="котик" width="200"
+        height="250">
+
+    <br><br><br><br><br><br>
+    3
+    <div class="three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit quia, possimus eaque nesciunt
+            placeat nihil ipsum vero laudantium corporis dolorem harum mollitia impedit doloribus cumque.</p>
+    </div>
+    <br><br><br><br><br><br>
+    4
+    <p class="kard">Знаки карточных мастей</p>
+    <p class="kard1">Lorem ipsum dolor sit.</p>
+    <p class="kard2">Lorem ipsum dolor sit amet.</p>
+    <p class="kard3">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="kard4">Lorem, ipsum dolor.</p>
+    <p class="kard5">Lorem ipsum dolor sit amet.</p>
+    <p class="grek"> Первые пять букв греческого алфавита</p>
+    <p class="money">Знаки денежных едениц</p>
+    <p class="mark">Знаки торговой марки</p>
+    <p class="math">Дроби</p>
+    <p class="tire">тире. длинное тире</p>
+    <p class="drugoe">На мой выбор</p><br><br><br><br><br><br>
+
+    5
+    <table class="chess-board">
+        <tbody>
+            <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+    6
+    <div class="diogram"> 75<span>%</span></div>
+    <br><br><br><br><br><br><br>
+
+
+
+    7
+    <form action="handler.php">
+        <p>Пожалуйста, заполните обязательные поля.</p>
+
+        <p>Имя (русские буквы): <input type="text" name="name" placeholder="Имя пользователя" pattern="[А-Яа-яЁё ]+"
+                required /><span></span></p>
+
+        <p>Ваш возраст: <input type="number" size="3" placeholder="Ваш возраст(лет)" min="1" max="110" required />
+            <span class="form__error">Ваш возраст должен быть не меньше 1 и не больше 110</span></p>
+
+        <p>Вы учитесь или работаете?: <input id="choose" name="i_like" required pattern="учусь|работаю"
+                placeholder="Вы учитесь или работаете? (напишите учусь или работаю)">
+            <span class="form__error">Выберите одно из двух</span></p>
+
+        <p>Сколько у вас свободного времени в день: <input type="number" name="name"
+                placeholder="Сколько у вас свободного времени в день?" min="1" max="24" required />
+            <span class="form__error">Ответ в часах в день. Минимально 1, максимально 24.</span></p>
+
+        <p>Что вы делаете в свободное время? (русские буквы): <input type="text" name="name"
+                placeholder="Что вы обычно делаете в свободное время?" pattern="[А-Яа-яЁё ]+" required /> <span></span>
+        </p>
+
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+
+</body>
+
+</html>
