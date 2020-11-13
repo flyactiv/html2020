@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+
+<head>
+    <!-- Техническая информация о документе -->
+    <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+    <title>Главная</title> <!-- Задаем заголовок документа -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+    <script src="script.js"></script> <!-- Подключаем сценарии -->
+    <style>
+        table {
+            width: 60%;
+            /* Ширина таблицы */
+            border-collapse: collapse;
+            /* Убираем двойные линии между ячейками */
+        }
+
+        td,
+        th {
+            padding: 3px;
+            /* Поля вокруг содержимого таблицы */
+            border: 1px solid rgb(255, 255, 255);
+            /* Параметры рамки */
+        }
+
+        th {
+            background: #f6fafa;
+            /* Цвет фона */
+            color: rgb(72, 73, 150);
+            /* Цвет текста */
+        }
+
+        tbody tr {
+            background-image: url(fon.PNG);
+            color: rgb(72, 73, 150);
+        }
+
+        tbody tr:hover {
+            background: #488cf3;
+            /* Цвет фона при наведении */
+            color: rgb(25, 26, 68);
+            /* Цвет текста при наведении */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>2004</th>
+            <th>2005</th>
+            <th>2006</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Рубины</td>
+                <td>43</td>
+                <td>51</td>
+                <td>79</td>
+            </tr>
+            <tr>
+                <td>Изумруды</td>
+                <td>28</td>
+                <td>34</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>Сапфиры</td>
+                <td>29</td>
+                <td>57</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

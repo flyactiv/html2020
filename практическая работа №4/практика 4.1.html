@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+
+<head>
+    <!-- Техническая информация о документе -->
+    <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+    <title>Главная</title> <!-- Задаем заголовок документа -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+    <script src="script.js"></script> <!-- Подключаем сценарии -->
+    <style>
+        .one {
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+            color: darkblue;
+        }
+
+        .two {
+            color: rgba(0, 0, 0, 0.6);
+            text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+        }
+
+        .three {
+            color: darkred;
+            text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .four {
+            color: darkslateblue;
+            text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .five {
+            color: forestgreen;
+            text-shadow: 0px 3px 0px #b2a98f,
+                0px 14px 10px rgba(0, 0, 0, 0.15),
+                0px 24px 2px rgba(0, 0, 0, 0.1),
+                0px 34px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        p.one:after {
+            content: '\2019';
+        }
+
+        p.one::before {
+            content: '\2018';
+        }
+
+        p.two:after {
+            content: '\201A';
+        }
+
+        p.two::before {
+            content: '\201A';
+        }
+
+        p.three:after {
+            content: '\201C';
+        }
+
+        p.three::before {
+            content: '\201D';
+        }
+
+        p.four:after {
+            content: '\201E';
+        }
+
+        p.four::before {
+            content: '\201E';
+        }
+
+        p.five:after {
+            content: '\BB';
+        }
+
+        p.five::before {
+            content: '\AB';
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="one">Левая одиночная и правая одиночная кавычки</p>
+    <!--Левая одиночная и правая одиночная кавычки -->
+    <p class="two">Нижняя одиночная кавычка</p> <!-- Нижняя одиночная кавычка-->
+    <p class="three">Левая и правая двойные кавычки</p>
+    <!--Левая и правая двойные кавычки -->
+    <p class="four">Нижняя двойная кавычка</p>
+    <!--Нижняя двойная кавычка -->
+    <p class="five">Левая и правая двойные угловые кавычки</p>
+    <!--Левая и правая двойные угловые кавычки -->
+
+</body>
+
+</html>

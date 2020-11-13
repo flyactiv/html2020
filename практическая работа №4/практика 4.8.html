@@ -1,0 +1,135 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+
+<head>
+    <!-- Техническая информация о документе -->
+    <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+    <title>Главная</title> <!-- Задаем заголовок документа -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+    <script src="script.js"></script> <!-- Подключаем сценарии -->
+    <style>
+        /*1*/
+        div {
+            width: 170px;
+            height: 100px;
+            line-height: 100px;
+            margin: 0 auto;
+            -o-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        kbd {
+            font-size: 0.9em;
+            display: inline-block;
+            line-height: 1.1;
+        }
+
+        .wrap {
+            display: inline-block;
+            margin: 0 40px 2em 0;
+            background: rgba(253, 252, 253, 0.5);
+        }
+
+        .seven {
+            border: 1px solid #000;
+            background-image: url(kitten.jpg);
+        }
+
+        .seven:hover {
+            -o-transform: rotate(720deg);
+            -ms-transform: rotate(720deg);
+            -moz-transform: rotate(720deg);
+            -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+        }
+
+
+
+        /*2*/
+        .target {
+            width: 170px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 10px;
+            background-image: url(kitten.jpg);
+        }
+
+        .container {
+            float: left;
+        }
+
+        .container:hover .target {
+            transform: scale(0.9);
+            transition-timing-function: ease-in;
+            transition: 0.2s;
+        }
+
+        .container .target:hover {
+            transform: scale(1.1);
+            transition-timing-function: ease-in;
+            transition: 0.2s;
+        }
+
+
+        /*3*/
+        .ten {
+            border: 1px solid #000;
+            background-image: url(kitten.jpg);
+        }
+
+        .ten:hover {
+            -o-transform: skew(-20deg, 20deg);
+            -ms-transform: skew(-20deg, 20deg);
+            -moz-transform: skew(-20deg, 20deg);
+            -webkit-transform: skew(-20deg, 20deg);
+            transform: skew(-20deg, 20deg);
+        }
+
+
+        /*4*/
+        .three {
+            border: 1px solid #000;
+            background-image: url(kitten.jpg);
+        }
+
+        .three:hover {
+            -o-transform: translate(20px, 20px);
+            -ms-transform: translate(20px, 20px);
+            -moz-transform: translate(20px, 20px);
+            -webkit-transform: translate(20px, 20px);
+            transform: translate(20px, 20px);
+        }
+    </style>
+</head>
+
+<body>
+    1
+    <div class="wrap">
+        <div class="seven"><kbd>Number 1</kbd></div>
+    </div> <br>
+    2 <br>
+    <div class="container">
+        <div class="target">Numder 2</div>
+    </div> <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    3 <br>
+
+    <div class="wrap">
+        <div class="ten"><kbd>Numder 3</kbd></div>
+    </div>
+    <br>
+    4 <br>
+    <div class="wrap">
+        <div class="three"><kbd>Number 4</kbd></div>
+    </div>
+
+</body>
+
+</html>

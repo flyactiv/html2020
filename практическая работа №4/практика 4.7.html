@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+
+<head>
+    <!-- Техническая информация о документе -->
+    <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+    <title>Главная</title> <!-- Задаем заголовок документа -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+    <script src="script.js"></script> <!-- Подключаем сценарии -->
+    <style>
+        .weather__row {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+        }
+
+        .weather__day {
+            width: 150px;
+            font-size: 20px;
+            margin-right: 2px;
+        }
+
+        .weather__day:hover {
+            box-shadow: 0 0 5px 1px #000000;
+        }
+
+        .weather__image {
+            padding: 15px;
+        }
+
+        .weather__top {
+            background: #0097B9;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .weather__bottom {
+            text-align: center;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Прогноз на 3 дня</h3>
+    <div class="weather">
+        <div class="weather__row">
+            <div class="weather__day">
+                <div class="weather__top">31.08</div>
+                <div class="weather__image"><img src="http://htmlbook.ru/files/weather-sun.jpg" alt=""></div>
+                <div class="weather__bottom">+20&deg;</div>
+            </div>
+            <div class="weather__day">
+                <div class="weather__top">01.09</div>
+                <div class="weather__image"><img src="http://htmlbook.ru/files/weather-snow.jpg" alt=""></div>
+                <div class="weather__bottom">-3&deg;</div>
+            </div>
+            <div class="weather__day">
+                <div class="weather__top">02.09</div>
+                <div class="weather__image"><img src="http://htmlbook.ru/files/weather-blizzard.jpg" alt=""></div>
+                <div class="weather__bottom">-10&deg;</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
