@@ -14,10 +14,11 @@
 
 <body>
     <script>
-        var hour = '15';
-        var min = '30';
-        var sec = '23';
-        alert(hour + ':' + min + ':' + sec);
+        date = new Date();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let second = date.getSeconds();
+        alert("Время - " + hour + ":" + minute + ":" + second);
     </script>
 </body>
 

@@ -15,14 +15,12 @@
 <body>
     <script>
         var arr = {
-            ru: ['пон', 'втр', 'ср', 'чет', 'пят', 'сб', 'вс',],
-            en: ['mon', 'tue', 'wen', 'thur', 'fri', 'str', 'sun',]
-        };
-
-        var lang = ru;
-        var day = 5;
-
-        alert(arr[lang], [day]);
+            'ru': ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
+            'en': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+        }
+        var lang = 'en';
+        var day = 4;
+        alert(arr[lang][day]);
     </script>
 </body>
 
