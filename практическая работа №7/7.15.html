@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>715</title>
+  <link rel="stylesheet" href="gallery.css">
+  <meta charset="utf-8">
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  font: 75%/120% sans-serif;
+}
+
+h2 {
+  font: bold 190%/100% sans-serif;
+  margin: 0 0 .2em;
+}
+
+h2 em {
+  font: normal 80%/100% sans-serif;
+  color: black;
+}
+
+#largeImg {
+  border: solid 1px #ccc;
+  width: 550px;
+  height: 400px;
+  padding: 5px;
+}
+
+#thumbs a {
+  border: solid 1px #ccc;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  margin: 2px;
+  float: left;
+}
+
+#thumbs a:hover {
+  border-color: yellow;
+}
+
+#thumbs li {
+  list-style: none;
+}
+
+#thumbs {
+  margin: 0;
+  padding: 0;
+}</style>
+</head>
+<body>
+  <p><img id="largeImg" src="https://img-s3.onedio.com/id-58b2b943687a33df46ba63db/rev-0/raw/s-f6d9910dd15f7e7a488588aaec66bf01b42eec56.jpg" alt="Large image"></p>
+  <ul id="thumbs">
+    <li>
+      <a href="https://4tololo.ru/sites/default/files/images/20141305123813.jpg" height="100" width="100"></a>
+    </li>
+    <li>
+      <a href="https://pitportal.ru/wp-content/uploads/2009/02/2363136_1564863815.jpg" height="100" width="100"></a>
+    </li>
+    <li>
+      <a href="http://29palms.ru/photo/blog/prikol_day/171215/resized/008_Blog_Pavla_Aksenova_Detki_prikolisty_Foto_photoholic_-_Depositphotos.jpg" height="100" width="100"></a>
+    </li>
+    <li>
+      <a href="https://im0-tub-ru.yandex.net/i?id=97aae016edab6588cb2c2e337efb5fed&ref=rim&n=33&w=281&h=188" height="100" width="100"></a>
+    </li>
+    <li>
+      <a href="http://29palms.ru/photo/blog/prikol_day/291015/resized/006_Blog_Pavla_Aksenova_Detki_prikolisty_Foto_photoholic_-_Depositphotos.jpg" height="100" width="100"></a>
+    </li>
+  </ul>
+  <script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+  </script>
+</body>
+</html>
